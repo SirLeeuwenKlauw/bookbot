@@ -16,7 +16,6 @@ def get_num_char():
     from main import get_book_text
     text = get_book_text("books/frankenstein.txt")
     lowercase_text = text.lower()
-    print(lowercase_text)
     char_num = {}
     
     for char in lowercase_text:
@@ -25,8 +24,6 @@ def get_num_char():
         else:
             char_num[char] = 1
         
-
     print(char_num)
-
 
 get_num_char()
