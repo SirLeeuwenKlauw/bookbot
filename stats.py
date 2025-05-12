@@ -10,4 +10,23 @@ def get_num_words():
 
     print(num_words,"words found in the document") 
 
-get_num_words()  
+get_num_words()
+
+def get_num_char():
+    from main import get_book_text
+    text = get_book_text("books/frankenstein.txt")
+    lowercase_text = text.lower()
+    print(lowercase_text)
+    char_num = {}
+    
+    for char in lowercase_text:
+        if char in char_num:
+            char_num[char] += 1
+        else:
+            char_num[char] = 1
+        
+
+    print(char_num)
+
+
+get_num_char()
